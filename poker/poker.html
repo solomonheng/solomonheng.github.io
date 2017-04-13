@@ -25,6 +25,7 @@
 			for (var i = 0; i < numberOfCard; i++) {
 				var number = Math.floor(Math.random()*leftNum);
 				resultNumber[i] = total[number];
+				total[number] = total[leftNum - 1];
 				leftNum = leftNum - 1;
 			}
 			
